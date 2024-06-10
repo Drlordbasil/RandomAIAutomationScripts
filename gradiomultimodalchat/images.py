@@ -3,7 +3,7 @@ from PIL import Image
 import io
 
 API_URL = "https://api-inference.huggingface.co/models/runwayml/stable-diffusion-v1-5"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer hf_"}
 
 class ImageGenerator:
     def __init__(self, api_url=API_URL, headers=headers):
