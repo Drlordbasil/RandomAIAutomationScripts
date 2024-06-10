@@ -2,7 +2,7 @@ import requests
 import time
 
 API_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v3"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer hf_"}
 
 class SpeechRecognition:
     def __init__(self, api_url=API_URL, headers=headers, max_retries=3, retry_delay=5):
