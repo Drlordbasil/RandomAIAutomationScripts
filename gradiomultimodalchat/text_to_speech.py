@@ -3,7 +3,7 @@ from IPython.display import Audio, display
 import IPython.display as ipd
 
 API_URL = "https://api-inference.huggingface.co/models/facebook/fastspeech2-en-ljspeech"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": "Bearer hf_"}
 
 class TextToSpeech:
     def __init__(self, api_url=API_URL, headers=headers):
