@@ -45,18 +45,6 @@ def run_python_script(script_content: str, input_data: str = "") -> str:
         logging.error(f"Error running script: {e}")
         return json.dumps({"error": str(e)})
 
-def example_tool_function(param: str) -> str:
-    """
-    Example tool function placeholder. Replace this with actual implementation.
-    
-    Args:
-        param (str): Example parameter.
-        
-    Returns:
-        str: A JSON string with the result.
-    """
-    logging.info(f"Executing example tool function with param: {param}")
-    return json.dumps({"param": param, "result": "success"})
 
 def task_complete() -> str:
     """
@@ -260,23 +248,7 @@ if __name__ == "__main__":
                 },
             },
         },
-        {
-            "type": "function",
-            "function": {
-                "name": "example_tool_function",
-                "description": "Example function for demonstrating multiple tools",
-                "parameters": {
-                    "type": "object",
-                    "properties": {
-                        "param": {
-                            "type": "string",
-                            "description": "An example parameter",
-                        }
-                    },
-                    "required": ["param"],
-                },
-            },
-        },
+
         {
             "type": "function",
             "function": {
@@ -311,7 +283,7 @@ if __name__ == "__main__":
     # Map function names to function implementations
     available_functions = {
         "run_python_script": run_python_script,
-        "example_tool_function": example_tool_function,
+
         "task_complete": task_complete,
         "get_user_feedback": get_user_feedback,
     }
