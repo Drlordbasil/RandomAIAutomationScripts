@@ -10,7 +10,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import requests
 import time
 import os
-
+### THIS IS ONLY HALF DONE!
 # User data
 user_data = {
     'FirstName': 'John',
