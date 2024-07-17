@@ -7,5 +7,5 @@ Feel free to explore and use these scripts as a resource for your own projects.
 
 
 
-
+The requirements.txt is the output of my pip freeze sh command.
 
